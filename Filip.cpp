@@ -12,8 +12,26 @@ First and only line of output should contain the larger of the numbers in the in
 */
 
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 int main(){
+    string A, B;
+
+    cin >> A >> B;
+
+    reverse(A.begin(), A.end());
+    reverse(B.begin(), B.end());
+
+    int a, b;
+    a = stoi(A);
+    b = stoi(B);
+
+    if(a > b){
+        cout << a;
+    }
+    else{
+        cout << b;
+    }
 
 }

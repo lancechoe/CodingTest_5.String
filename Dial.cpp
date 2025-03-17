@@ -17,5 +17,37 @@ The first and only line of output must contain the required dialling time.
 using namespace std;
 
 int main(){
+    string NUM;
+    int sum = 0;
 
+    cin >> NUM;
+
+    for(int i=0;i<NUM.size();i++){
+        if(65 <= (int)NUM[i] && (int)NUM[i] <= 67){
+            sum += 3;
+        }
+        else if(68 <= (int)NUM[i] && (int)NUM[i] <= 70){
+            sum += 4;
+        }
+        else if(71 <= (int)NUM[i] && (int)NUM[i] <= 73){
+            sum += 5;
+        }
+        else if(74 <= (int)NUM[i] && (int)NUM[i] <= 76){
+            sum += 6;
+        }
+        else if(77 <= (int)NUM[i] && (int)NUM[i] <= 79){
+            sum += 7;
+        }
+        else if(80 <= (int)NUM[i] && (int)NUM[i] <= 83){
+            sum += 8;
+        }
+        else if(84 <= (int)NUM[i] && (int)NUM[i] <= 86){
+            sum += 9;
+        }
+        else if(87 <= (int)NUM[i] && (int)NUM[i] <= 90){
+            sum += 10;
+        }
+    }
+
+    cout << sum;
 }

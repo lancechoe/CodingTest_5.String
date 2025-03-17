@@ -12,8 +12,15 @@ Print the input exactly as it is received.
 */
 
 #include <iostream>
+#include <string>
 using namespace std;
 
-int main(){
+int main() {
+    string line;
+    
+    while (getline(cin, line)) {  // EOF까지 한 줄씩 입력 받기
+        cout << line << endl;     // 입력받은 줄 그대로 출력
+    }
 
-}   
+    return 0;
+}
